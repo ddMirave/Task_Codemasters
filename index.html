@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<!--Лишний body-->
     <body>
         <form method="post">
             <h1>Регистрация</h1>
@@ -32,7 +33,9 @@
                   </ul>
                 </fieldset>
                 <p>
-                  <label for="ace">Возраст:</label>
+                    <!--Некорректное значение тега for-->
+                    <label for="ace">Возраст:</label>
+                    <!--Id должно быть уникальным. В данном случае он используется 3 раза-->
                   <input type="text" id="name" name="useAce" required>
                 </p>
                 <p>
@@ -68,10 +71,12 @@
                 </p>
                 <p>
                   <label for="phone">Нормер телефона:</label>
+                    <!--типа Phone не существует-->
                   <input type="phone" id="phone" pattern="^\+7[1-9]{10}$" required>
                 </p>
                 <p>
                   <label for="expiration">Дата окончания срока:</label>
+                    <!--В required не надо передавать значение-->
                   <input type="text" id="expiration" required="true" placeholder="ММ/ГГ" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
                 </p>
             </section>
