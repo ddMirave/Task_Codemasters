@@ -1,0 +1,430 @@
+@import url(normalize.css);
+
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: #1b1b1b;
+    font-family: Inter;
+}
+
+button {
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.header-banner {
+    width: 100%;
+    height: 54px;
+    background: #343434;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #858585;
+}
+
+
+.header-banner p {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.header-banner p a {
+    color: #ae8aff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    height: 64px;
+    background: #1b1b1b;
+    padding: 0 58px;
+    border-bottom: 1px solid #858585;
+}
+
+.navbar .container {
+    gap: 16px;
+    margin-right: auto;
+}
+
+.navbar-logo {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 159.74px;
+    height: 28.79px;
+}
+
+.navbar-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.navbar-main-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navbar-main-menu-list {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar-list-container {}
+
+.navbar-list-container a {
+    padding: 12px 8px;
+    border-radius: 5px;
+    color: #cdcdcd;
+    font-size: 16px;
+}
+
+.navbar-list-container .beta {
+    font-size: 7.2px;
+    font-weight: 700;
+    padding: 2px 3px;
+    vertical-align: super;
+    border-radius: 16px;
+    color: #1b1b1b;
+    background: #ff6d91;
+}
+
+.navbar-list-container :hover {
+    background: #ff2a5130;
+    color: #ff707f;
+}
+
+.theme__switcher {}
+
+.theme__switcher button {
+    background: #1b1b1b;
+    font-size: 14px;
+    padding: 6px 6px;
+    border-radius: 5px;
+    color: #cdcdcd;
+}
+
+.theme__switcher :hover {
+    background: #858585;
+}
+
+.header-search {
+    gap: 8px;
+
+
+}
+
+.search {
+    gap: 8px;
+}
+
+.search-input {
+    background: #343434;
+    width: 80px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #cdcdcd;
+    color: #fff;
+}
+
+.auth-container {
+    gap: 16px;
+    display: flex;
+}
+
+.login__link {
+    color: #cdcdcd;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.reg__link {
+    background: #fff;
+    color: #1b1b1b;
+    border-radius: 5px;
+    font-size: 13.5px;
+    padding: 8px 17px;
+    font-weight: 600;
+}
+
+.article-actions {
+    background: #343434;
+    height: 28px;
+    width: 100%;
+    border-bottom: 1px solid #858585;
+}
+
+.article-actions .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 58px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    gap: 16px;
+    margin-right: auto;
+}
+
+.breadcrumbs__list a {
+    color: #cdcdcd;
+}
+
+.article-actions-entries {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.article-actions-entries a {
+    color: #cdcdcd;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.article-actions-entries :hover {
+    background: #858585;
+}
+
+.main__wrapper {
+    width: 100%;
+    padding: 0 58px;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 32px;
+    grid-template-areas: "sidebar main toc";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) minmax(0, 15rem);
+}
+
+.sidebar-container {
+    display: contents;
+}
+
+
+.sidebar a :hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    overflow: scroll;
+    height: 900px;
+    width: 100%;
+    position: sticky;
+    top: 92px;
+}
+
+
+.sidebar-actions {
+    height: 0;
+    padding-bottom: 64px;
+}
+
+.sidebar-body {}
+
+.sidebar-body ol {
+    margin-bottom: 250px;
+}
+
+.sidebar-body ol li {
+
+    margin-bottom: 8px;
+}
+
+.sidebar-body ol li :first-of-type strong {
+    margin-top: 16px;
+}
+
+.sidebar-body ol li a {
+    font-size: 13.5px;
+    display: inline-flex;
+    padding: 7px;
+    color: #cdcdcd;
+}
+
+.sidebar-filter-container {
+    padding-bottom: 32px;
+    padding-top: 8px;
+}
+
+.sidebar-filter-input__field {
+    background: #1b1b1b;
+    border: 1px solid #cdcdcd;
+    border-radius: 16px;
+    height: 32px;
+}
+
+.toc-container {
+    height: 500px;
+    position: sticky;
+    top: 92px;
+    overflow: auto;
+    display: block;
+}
+
+.toc {
+    padding-top: 32px;
+    display: block;
+}
+
+.document-toc-list li {
+    border-left: 2px solid #cdcdcd;
+    padding: 8px 16px;
+}
+
+.document-toc-list a {
+    font-size: 13.5px;
+    padding: 12px 0;
+    color: #cdcdcd;
+}
+
+.place_side {
+    height: 400px;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.page-footer {
+    background: #343434;
+    padding: 32px
+}
+
+footer h2,
+p,
+a {
+    color: #cdcdcd;
+}
+
+.page-footer-grid {
+    gap: 40px;
+    display: grid;
+    grid-template-areas:
+        "logo nav1 nav2 nav3 nav4"
+        "moz moz moz moz moz"
+        "legal legal legal legal . ";
+}
+
+.page-footer-logo-col {
+    color: #cdcdcd;
+    grid-area: logo;
+}
+
+.page-footer-logo-col p {
+    margin-top: 20px;
+}
+
+.mdn-footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.social-icons a {
+    width: 21px;
+    height: 21px;
+}
+
+.page-footer-nav-col-1 {
+    grid-area: nav1;
+}
+.page-footer-nav-col-2 {
+    grid-area: nav2;
+}
+.page-footer-nav-col-3 {
+    grid-area: nav3;
+}
+.page-footer-nav-col-4 {
+    grid-area: nav4;
+}
+
+.footer-nav-heading {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-nav-list a {
+    font-size: 13.5px;
+}
+
+.page-footer-moz {
+    grid-area: moz;
+    display: flex;
+    gap: 32px;
+    padding-top: 24px;
+    align-items: center;
+    border-top: 1px solid #cdcdcd;
+}
+
+.footer-moz-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-moz-link {
+    text-decoration: underline;
+    font-size: 11px;
+}
+
+.page-footer-legal {
+    grid-area: legal;
+}
+
+.page-footer-legal p {
+    font-size: 11px;
+    margin: 0 0 8px 0;
+}
+
+.page-footer-legal p a {
+    text-decoration: underline;
+}
