@@ -2,87 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Task-2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Task-2</title>
 </head>
 
 <body>
-    <body>
-        <form method="post">
-            <h1>Регистрация</h1>
-            <section>
-                <h2>Персональные данные:</h2>
-                <fieldset>
-                  <legend>Пол:</legend>
-                  <ul>
-                      <li>
-                        <label for="gender_1">
-                          <input type="radio" id="gender_1" name="gender" value="userMale">
-                          Мужской
-                        </label>
-                      </li>
-                      <li>
-                        <label for="gender_2">
-                          <input type="radio" id="gender_2" name="gender" value="userFemale" >
-                          Женский
-                        </label>
-                      </li>
-                  </ul>
-                </fieldset>
-                <p>
-                  <label for="ace">Возраст:</label>
-                  <input type="text" id="name" name="useAce" required>
-                </p>
-                <p>
-                  <label for="name">Имя:</label>
-                  <input type="text" id="name" name="userName" required>
-                </p>
-                <p>
-                  <label for="name">Фамилия:</label>
-                  <input type="text" id="name" name="userSurname" required>
-                </p>
-                <p>
-                  <label for="mail">Электронная почта</label>
-                  <input type="email" id="mail" name="userMail" required>
-                </p>
-                <p>
-                  <label for="pwd">Пароль:</label>
-                  <input type="password" id="pwd" name="password" required>
-                </p>
-            </section>
-            <section>
-                <h2>Платёжная информация</h2>
-                <p>
-                  <label for="card">Платёжная система:</label>
-                  <select id="card" name="userСard">
-                    <option value="mir">МИР</option>
-                    <option value="visa">Visa</option>
-                    <option value="mc">Mastercard</option>
-                  </select>
-                </p>
-                <p>
-                  <label for="number">Номер карты:</label>
-                  <input type="tel" id="number" name="cardNumber" required>
-                </p>
-                <p>
-                  <label for="phone">Нормер телефона:</label>
-                  <input type="phone" id="phone" pattern="^\+7[1-9]{10}$" required>
-                </p>
-                <p>
-                  <label for="expiration">Дата окончания срока:</label>
-                  <input type="text" id="expiration" required="true" placeholder="ММ/ГГ" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
-                </p>
-            </section>
-            <section>
-                <p>
-                    <button type="button" onclick="document.location='page_1.html'">Пропустить</button>
-                    <button type="submit">Зарегистрироваться</button>
-                </p>
-            </section>
-        </form>
-    </form>
+  <form method="post">
+    <h1>Регистрация</h1>
+    <section>
+      <h2>Персональные данные:</h2>
+      <fieldset>
+        <legend>Пол:</legend>
+        <ul>
+          <li>
+            <label for="gender_1">
+              <input type="radio" id="gender_1" name="gender" value="userMale">
+              Мужской
+            </label>
+          </li>
+          <li>
+            <label for="gender_2">
+              <input type="radio" id="gender_2" name="gender" value="userFemale">
+              Женский
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <p>
+        <label for="ace">Возраст:</label>
+        <input type="text" id="ace" name="useAce" required>
+      </p>
+      <p>
+        <label for="name_1">Имя:</label>
+        <input type="text" id="name_1" name="userName" required>
+      </p>
+      <p>
+        <label for="name_2">Фамилия:</label>
+        <input type="text" id="name_2" name="userSurname" required>
+      </p>
+      <p>
+        <label for="mail">Электронная почта</label>
+        <input type="email" id="mail" name="userMail" required>
+      </p>
+      <p>
+        <label for="pwd">Пароль:</label>
+        <input type="password" id="pwd" name="password" required>
+      </p>
+    </section>
+    <section>
+      <h2>Платёжная информация</h2>
+      <p>
+        <label for="card">Платёжная система:</label>
+        <select id="card" name="userСard">
+          <option value="mir">МИР</option>
+          <option value="visa">Visa</option>
+          <option value="mc">Mastercard</option>
+        </select>
+      </p>
+      <p>
+        <label for="number">Номер карты:</label>
+        <input type="tel" id="number" name="cardNumber" required>
+      </p>
+      <p>
+        <label for="phone">Нормер телефона:</label>
+        <input type="tel" id="phone" pattern="^\+7[1-9]{10}$" required>
+      </p>
+      <p>
+        <label for="expiration">Дата окончания срока:</label>
+        <input type="text" id="expiration"  placeholder="ММ/ГГ" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
+      </p>
+    </section>
+    <section>
+      <p>
+        <button type="button" onclick="document.location='page_1.html'">Пропустить</button>
+        <button type="submit">Зарегистрироваться</button>
+      </p>
+    </section>
+  </form>
 </body>
 
 </html>
